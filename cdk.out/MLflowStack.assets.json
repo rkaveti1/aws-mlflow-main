@@ -1,0 +1,32 @@
+{
+  "version": "21.0.0",
+  "files": {
+    "5c65cfe0834a1b859d157e05aa9572432f2a4b21312d25abfbc6e9f8ca8e3b9a": {
+      "source": {
+        "path": "MLflowStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "5c65cfe0834a1b859d157e05aa9572432f2a4b21312d25abfbc6e9f8ca8e3b9a.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {
+    "b69ecbe951edcd11257db8ff3c4174484e0402f77096efa2cc356aa6a55537ef": {
+      "source": {
+        "directory": "asset.b69ecbe951edcd11257db8ff3c4174484e0402f77096efa2cc356aa6a55537ef"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "repositoryName": "cdk-hnb659fds-container-assets-${AWS::AccountId}-${AWS::Region}",
+          "imageTag": "b69ecbe951edcd11257db8ff3c4174484e0402f77096efa2cc356aa6a55537ef",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-image-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  }
+}
