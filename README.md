@@ -30,7 +30,7 @@ make deploy-mlops
 
 The stack will take a few minutes to launch the MLflow server on AWS Fargate, with an S3 bucket and a MySQL database on
 RDS. You can then use the load balancer URI present in the stack outputs to access the MLflow UI:
-![](media/load-balancer.png)
+
 ![](media/mlflow-interface.png)
 
 You now have a remote MLflow tracking server running accessible through
