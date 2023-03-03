@@ -38,15 +38,12 @@ a [REST API](https://mlflow.org/docs/latest/rest-api.html#rest-api) via
 the [load balancer uri](https://mlflow.org/docs/latest/quickstart.html#quickstart-logging-to-remote-server). 
 You can use the MLflow Tracking API to log parameters, metrics, and models when running your machine learning project.
 
-The following python API command allows you to point your code executing on SageMaker to your MLflow remote server:
+The following python API command allows you to point your code executing on AWS to your MLflow remote server:
 
 ```
 import mlflow
 mlflow.set_tracking_uri('<YOUR LOAD BALANCER URI>')
 ```
-
-Connect to your notebook instance and set the remote tracking URI.
-![](media/architecture-experiments.png)
 
 ### Destroying the stack
 
