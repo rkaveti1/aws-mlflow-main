@@ -45,6 +45,8 @@ import mlflow
 mlflow.set_tracking_uri('<YOUR LOAD BALANCER URI>')
 ```
 
+Load balaner url (for this AWS stack) = http://MLflo-MLFLO-1SM11J3J1GT5L-d1cafc1384370706.elb.us-east-1.amazonaws.com
+
 ### Destroying the stack
 
 Run following command to destroy MLFlow stack
